@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3616af1012.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(back2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container .box{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px #0009;
+    backdrop-filter: blur(5px);
+    background: rgba(255,255,255,.2);
+    overflow: hidden;
+    position: relative;
+}
+.container .box .image{
+    padding: 60px;
+    margin-right: 40px;
+    border-radius: 0 50px 50px 0;
+    background: #fff2;
+    height: 270px;
+}
+.container .box .image img{
+    height: 150px;
+    width: 150px;
+    border-radius: 0 50px 0 50px;
+    box-shadow: 0 0 0 10px #fff3;
+}
+.container .box .content .title{
+    color: #fff;
+    padding: 5px 0;
+    font-size: 33px;
+    text-transform: capitalize;
+
+}
+.container .box .content .post{
+    display: block;
+    font-size: 20px;
+    color: #fff9;
+    margin-bottom: 30px;
+}
+.container .box .content a{
+    display: block;
+    color: #fff;
+    font-size: 20px;
+}
+.container .box .content a i{
+    color: #fff;
+    padding: 7px 5px;
+}
+.container .box .content a:hover{
+    color: #fff3;
+}
+.container .box .share{
+    position: absolute;
+    top: 50%; right: 30px;
+    transform: translate(0, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background: #fff3;
+    border-radius: 50px;
+    height: 220px;
+    width: 45px;
+
+}
+.container .box .share a{
+    margin: 15px;
+    color: #fff;
+    font-size: 23px;
+}
+.container .box .share a:hover{
+    color: #fff6;
+}
+@media(max-width:768px){
+    .container .box{
+        flex-flow: column;
+        padding-bottom: 100px;
+        margin: 20px;
+        width: 330px;
+    }
+    .container .box .image{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        border-radius: 0 0 50px 50px;
+    }
+    .container .box .share{
+        left: 50%; top: 87%;
+        transform: translate(-50% 0);
+        flex-flow: row;
+        height: 45px;
+        width: 240px;
+        margin-left: -120px;
+        margin-top: 30px;
+    }
+
+}
+    </style>
+    <title>sifnature 6</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="image">
+                <img src="sabbir.jpg" alt="#" height="100px">
+            </div>
+            <div class="content">
+                <h3 class="title">Sabbir Hossain</h3>
+                <span class="post">Web Designer</span>
+                <a href="#"><i class="fa-solid fa-phone"></i>01632732220</a>
+                <a href="#"><i class="fa-solid fa-globe"></i>www.sabbir.com</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i>sabbir92828@gmail.com</a>
+            </div>
+            <div class="share">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
